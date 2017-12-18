@@ -1,8 +1,6 @@
-FROM php:fpm
+FROM php:7.1-fpm
 
 LABEL maintenainer="Pierre Pottié <pierre.pottie@gmail.com>"
-
-
 
 RUN systemMods=" \
         apt-transport-https \
