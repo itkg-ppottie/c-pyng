@@ -33,6 +33,9 @@ RUN composer --version
 
 RUN yarn global add gulp --prefix /usr/local
 
+RUN npm install --save-dev gulp-cdnizer gulp-yarn gulp-inject
+RUN yarn add gulp-yarn -D
+
 WORKDIR  /var/www
 
 CMD ["gulp","watch"]
