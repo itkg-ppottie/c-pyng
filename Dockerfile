@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y yarn \
 
 
 # Install Composer
-COPY --from=composer:1.5 /usr/bin/composer /usr/bin/composer
+COPY --from=composer /usr/bin/composer /usr/bin/composer
 RUN composer --version
 
 RUN yarn global add gulp --prefix /usr/local
