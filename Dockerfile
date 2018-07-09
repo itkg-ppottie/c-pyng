@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y yarn \
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 RUN composer --version
 
-RUN yarn global add gulp --prefix /usr/local
+RUN yarn global add gulp-sass-variables gulp --prefix /usr/local
 
 WORKDIR  /var/www
 
