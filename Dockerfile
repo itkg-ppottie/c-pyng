@@ -16,6 +16,7 @@ RUN composer --version
 
 RUN yarn global add gulp --prefix /usr/local
 
+ENTRYPOINT []
 WORKDIR  /var/www
 
 CMD ["gulp","watch"]
